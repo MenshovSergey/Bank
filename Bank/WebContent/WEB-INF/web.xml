@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+<resource-ref>
+      <description>DB Connection</description>
+      <res-ref-name>TestDB</res-ref-name>
+      <res-type>javax.sql.DataSource</res-type>
+      <res-auth>Container</res-auth>
+  </resource-ref> 
+    <servlet>
+ 	<servlet-name>Start</servlet-name>
+ 	<servlet-class>all.Start</servlet-class>
+</servlet>
+<servlet>
+ 	<servlet-name>Add_account</servlet-name>
+ 	<servlet-class>all.AddAccount</servlet-class>
+</servlet>
+<servlet>
+ 	<servlet-name>Delete_account</servlet-name>
+ 	<servlet-class>all.DeleteAccount</servlet-class>
+</servlet>
+<servlet>
+ 	<servlet-name>Get_account_amount</servlet-name>
+ 	<servlet-class>all.GetAccountAmount</servlet-class>
+</servlet>
+<servlet>
+ 	<servlet-name>Withdraw_account</servlet-name>
+ 	<servlet-class>all.WithdrawAccount</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>Add_money_to_account</servlet-name>
+	<servlet-class>all.AddMoneyToAccount</servlet-class>
+</servlet>
+<servlet>
+	<servlet-name>Transfer</servlet-name>
+	<servlet-class>all.Transfer</servlet-class>
+</servlet>
+ <servlet>
+	<servlet-name>List_accounts</servlet-name>
+	<servlet-class>all.ListAccounts</servlet-class>
+</servlet>
+ 
+<servlet-mapping>
+ 	<servlet-name>Start</servlet-name>
+ 	<url-pattern>/Start</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+ 	<servlet-name>Add_account</servlet-name>
+ 	<url-pattern>/Add_account</url-pattern> 	
+</servlet-mapping>
+<servlet-mapping>
+ 	<servlet-name>Delete_account</servlet-name>
+ 	<url-pattern>/Delete_account</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+ 	<servlet-name>List_accounts</servlet-name>
+ 	<url-pattern>/List_accounts</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+ 	<servlet-name>Get_account_amount</servlet-name>
+ 	<url-pattern>/Get_account_amount</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+ 	<servlet-name>Withdraw_account</servlet-name>
+ 	<url-pattern>/Withdraw_account</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+ 	<servlet-name>Add_money_to_account</servlet-name>
+ 	<url-pattern>/Add_money_to_account</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+ 	<servlet-name>Transfer</servlet-name>
+ 	<url-pattern>/Transfer</url-pattern>
+</servlet-mapping>
+</web-app>

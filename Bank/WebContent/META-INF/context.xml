@@ -1,0 +1,6 @@
+ <Context>
+ <Resource name="TestDB" auth="Container" type="javax.sql.DataSource"
+               maxActive="-1" maxIdle="-1" maxWait="-1"
+               username="nauru" password="17981798" driverClassName="com.mysql.jdbc.Driver"
+               url="jdbc:mysql://localhost:3306/bank"/>
+ </Context>
