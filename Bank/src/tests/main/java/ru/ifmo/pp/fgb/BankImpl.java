@@ -21,12 +21,7 @@ public class BankImpl implements tests.main.java.ru.ifmo.pp.fgb.Bank  {
 	public BankImpl(int N) {
 		System.out.println("Constructing...");
 		accounts = new LoggingAccount[N];
-		try {
-			Bank.deleteAccount(1);
-		} catch (AccountNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
 		for (int i = 0; i < N; i++) {
 			Bank.createAccount();
 			accounts[i] = new LoggingAccount(i);
